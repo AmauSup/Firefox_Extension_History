@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "History Sorter",
+  "version": "1.0.0",
+  "description": "Extension pour trier l'historique par site web",
+  "permissions": ["history"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "History Sorter"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

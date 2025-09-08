@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>History Sorter</title>
+  <link rel="stylesheet" href="style.css" /> <!-- Feuille de style externe -->
+</head>
+<body>
+  <!-- Titre principal -->
+  <h1>Historique par site</h1>
+
+  <div style="margin-bottom:10px;">
+    <!-- Sélecteur pour le mode de tri -->
+    <label for="sortMode">Trier par :</label>
+    <select id="sortMode">
+      <option value="visits">Nombre de visites</option>
+      <option value="name">Nom du site</option>
+    </select>
+
+    <!-- Sélecteur pour l’ordre -->
+    <br><br><label for="sortOrder">Ordre :</label>
+    <select id="sortOrder">
+      <option value="desc">Décroissant</option>
+      <option value="asc">Croissant</option>
+    </select><br>
+
+    <!-- Zone de recherche par domaine -->
+    <br><label for="searchDomain">Recherche par domaine :</label>
+    <input type="text" id="searchDomain" placeholder="Rechercher un domaine..." style="width:100%;margin-bottom:10px;padding:5px;">
+
+    <!-- Zone de recherche par URL -->
+    <br><label for="searchURL">Recherche par url :</label>
+    <input type="text" id="searchURL" placeholder="Rechercher une URL..." style="width:100%;margin-bottom:10px;padding:5px;">
+
+    <!-- Liste qui contiendra l’historique -->
+    <br><label for="historyList">Historique : </label>
+    <ul id="historyList"></ul>
+  </div>
+
+  <!-- Script principal qui gère l’affichage et la logique -->
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* ----- Global ----- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px;
+  width: 350px; /* largeur adaptée aux popup */
+  background-color: #f4f6f8; /* couleur douce de fond */
+  color: #333;
+}
+
+/* ----- Titre principal ----- */
+h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ffffff; /* texte blanc */
+  background-color: #007bff; /* bleu */
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ombre douce */
+}
+
+/* ----- Labels des contrôles ----- */
+label {
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  color: #ffffff;
+  background-color: #007bff; /* bleu comme le titre */
+  border-radius: 5px;
+  padding: 4px 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* ----- Inputs et selects ----- */
+select, input[type="text"] {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  box-sizing: border-box;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+select:focus, input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.3); /* effet focus */
+  outline: none;
+}
+
+/* ----- Listes principales ----- */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 6px 0;
+  padding: 8px 10px;
+  background-color: #fff; /* fond blanc */
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* ombre visible */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  transition: box-shadow 0.2s, transform 0.1s;
+}
+
+li:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  transform: translateY(-2px); /* effet "carte qui se soulève" */
+}
+
+/* ----- Liens ----- */
+li a {
+  text-decoration: none;
+  color: #0066cc;
+  flex-grow: 1;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Sous-listes ----- */
+ul ul {
+  margin-left: 15px;
+  background-color: #dedede; /* fond gris clair */
+  border-left: 2px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+ul ul li {
+  margin: 4px 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+ul ul li:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+  transform: translateY(-1px);
+}

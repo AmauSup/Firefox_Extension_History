@@ -1,0 +1,13 @@
+{
+  "name": "hello-world-extension",
+  "version": "1.0.0",
+  "description": "Une extension WebExtension simple qui affiche Hello World dans la console",
+  "scripts": {
+    "start": "web-ext run",
+    "build": "web-ext build",
+    "lint": "web-ext lint"
+  },
+  "devDependencies": {
+    "web-ext": "^7.11.0"
+  }
+}
