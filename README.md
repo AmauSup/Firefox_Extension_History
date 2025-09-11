@@ -1,82 +1,102 @@
-# 📂 History Sorter – Firefox Extension
+# 📂 History Sorter – Extension Firefox
 
-History Sorter is a Firefox browser extension that helps you organize, search, and explore your browsing history more efficiently.
-It groups visited pages by domain, provides sorting and filtering tools, and displays everything in a modern, collapsible UI.
+History Sorter est une extension pour le navigateur Firefox qui vous aide à organiser, rechercher et explorer votre historique de navigation plus efficacement.  
+Elle regroupe les pages visitées par domaine, fournit des outils de tri et de filtrage, et affiche le tout dans une interface moderne et extensible.
 
-## ✨ Features
+---
 
-📑 Group by domain → all visited pages neatly organized
+## ✨ Fonctionnalités
 
-🔍 Search filters → by domain name or page title/URL
+📑 Regroupement par domaine → toutes les pages visitées sont organisées de manière claire
 
-🔄 Sorting options → by site name or number of visits
+🔍 Filtres de recherche → par nom de domaine ou titre/URL de la page
 
-⬆️⬇️ Ascending/descending order toggle
+🔄 Options de tri → par nom du site ou par nombre de visites
 
-📂 Expandable/collapsible domain lists
+⬆️⬇️ Bascule ordre croissant/décroissant
 
-🎨 Clean and responsive UI with hover effects and shadows
+📂 Listes de domaines extensibles/rétractables
 
-## 🛠️ Technologies Used
+🎨 Interface propre et responsive avec effets au survol et ombres
 
-HTML5 → Popup structure
+---
 
-CSS3 → Modern, styled UI with transitions and shadows
+## 🛠️ Technologies utilisées
 
-JavaScript (ES6) → DOM manipulation and rendering logic
+HTML5 → Structure du popup
 
-Firefox WebExtensions API → browser.history for data access
+CSS3 → Interface moderne avec transitions et ombres
 
-# 🚀 Getting Started
-## ✅ Prerequisites
+JavaScript (ES6) → Manipulation du DOM et logique de rendu
 
-Firefox Browser (latest version)
+Firefox WebExtensions API → `browser.history` pour accéder aux données
 
-Basic familiarity with WebExtensions
+---
 
-## 📥 Installation (Temporary Add-on in Firefox)
+# 🚀 Démarrage
+
+## ✅ Prérequis
+
+- Navigateur Firefox (dernière version)  
+- Connaissances de base sur les WebExtensions
+
+---
+
+## 📥 Installation (Add-on temporaire dans Firefox)
+
+
+    1. Ouvrir Firefox et aller dans `about:debugging#/runtime/this-firefox`
+    2. Cliquer sur “Charger un module complémentaire temporaire”
+    3. Sélectionner le fichier `manifest.json` de l’extension
+    4. L’extension sera active jusqu’au redémarrage du navigateur
+
 ```
 git clone https://github.com/yourusername/history-sorter-firefox.git
 cd history-sorter-firefox
 ```
-Open Firefox and go to:
+Ovrir Firefox puis aller dans :
 ```
     about:debugging#/runtime/this-firefox
 ```
-Click "Load Temporary Add-on…"
+Cliquez sur “Charger un module complémentaire temporaire…”
 
-Select the manifest.json file in this folder
+Sélectionnez le fichier `manifest.json` dans ce dossier
 
-The extension icon will appear in your Firefox toolbar 🎉
+L’icône de l’extension apparaîtra dans votre barre d’outils Firefox 🎉
 
-⚠️ Note: This is a temporary add-on → it will be removed when Firefox restarts. You’ll need to reload it each session.
-## ▶️ Usage
+⚠️ Note : il s’agit d’un add-on temporaire → il sera supprimé au redémarrage de Firefox. Il faudra le recharger à chaque session.
 
-Click the History Sorter icon in the toolbar
+---
 
-Choose sorting preferences:
+## ▶️ Utilisation
 
-        🔢 By number of visits
+- Cliquez sur l’icône History Sorter dans la barre d’outils
+- Choisissez vos préférences de tri :
 
-        🏷️ By site name
 
-Adjust order:
+      🔢 Par nombre de visites
+      🏷️ Par nom du site
 
-        ⬆️ Ascending
 
-        ⬇️ Descending
+Ajuster l'ordre:
 
-Filter results:
+        ⬆️ Croissant
 
-        By domain
+        ⬇️ Décroissant
 
-        By URL/title
+Filtrer les résultats:
 
-Click a domain → expand its visited pages
+        Par domaine
 
-Click any link → open it in a new tab
+        Par URL/Titre
 
-## 📂 Project Structure
+- Cliquez sur un domaine → pour afficher les pages visitées
+- Cliquez sur n’importe quel lien → pour l’ouvrir dans un nouvel onglet
+
+---
+
+## 📂 Structure du projet
+
 ```
 history-sorter-firefox/
  ├── manifest.json      # Firefox extension manifest (V2)
@@ -86,29 +106,31 @@ history-sorter-firefox/
  ├── background.js      # Background script (optional for future features)
  └── README.md          # Documentation
 ```
-## 🔮 Future Improvements
+## 🔮 Améliorations futures
 
-    ⭐ Favorite domains (pin to top of the list)
+```text
+⭐ Domaines favoris (épingler en haut de la liste)
 
-    📤 Export history to CSV/JSON
+📤 Exporter l’historique au format CSV/JSON
 
-    🕵️ Advanced filters (date range, visit frequency)
+🕵️ Filtres avancés (plage de dates, fréquence des visites)
 
-    🔄 Migration to Manifest V3 (when fully supported in Firefox)
+🔄 Migration vers Manifest V3 (lorsque pleinement supporté par Firefox)
+```
 
 # ✅ Conclusion
 
-History Sorter is a lightweight yet powerful Firefox extension for managing browsing history.
+History Sorter est une extension Firefox légère mais puissante pour gérer l’historique de navigation.
 
-It showcases:
+Elle met en avant :
 
-    Clean WebExtension architecture
+```text
+- Une architecture WebExtension propre
+- Une utilisation pratique de l’API History de Firefox
+- Un accent sur l’ergonomie et un design d’interface moderne
+```
 
-    Practical use of the Firefox History API
+Cela en fait à la fois un outil utilisable au quotidien et un projet de démonstration professionnelle du développement d’extensions de navigateur.
 
-    A focus on usability and modern UI design
-
-This makes it both a daily-use tool and a professional demonstration project of browser extension development.
-
-Clone or download this repository:
+Cloner ou télécharger ce dépôt.
 
