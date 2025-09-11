@@ -45,15 +45,6 @@ Firefox WebExtensions API → `browser.history` pour accéder aux données
 ## 📥 Installation (Add-on temporaire dans Firefox)
 
 
-    1. Ouvrir Firefox et aller dans `about:debugging#/runtime/this-firefox`
-    2. Cliquer sur “Charger un module complémentaire temporaire”
-    3. Sélectionner le fichier `manifest.json` de l’extension
-    4. L’extension sera active jusqu’au redémarrage du navigateur
-
-```
-git clone https://github.com/yourusername/history-sorter-firefox.git
-cd history-sorter-firefox
-```
 Ovrir Firefox puis aller dans :
 ```
     about:debugging#/runtime/this-firefox
@@ -75,6 +66,7 @@ L’icône de l’extension apparaîtra dans votre barre d’outils Firefox 🎉
 
 
       🔢 Par nombre de visites
+  
       🏷️ Par nom du site
 
 
@@ -106,17 +98,6 @@ history-sorter-firefox/
  ├── background.js      # Background script (optional for future features)
  └── README.md          # Documentation
 ```
-## 🔮 Améliorations futures
-
-```text
-⭐ Domaines favoris (épingler en haut de la liste)
-
-📤 Exporter l’historique au format CSV/JSON
-
-🕵️ Filtres avancés (plage de dates, fréquence des visites)
-
-🔄 Migration vers Manifest V3 (lorsque pleinement supporté par Firefox)
-```
 
 # ✅ Conclusion
 
@@ -132,5 +113,10 @@ Elle met en avant :
 
 Cela en fait à la fois un outil utilisable au quotidien et un projet de démonstration professionnelle du développement d’extensions de navigateur.
 
-Cloner ou télécharger ce dépôt.
+Cloner ou télécharger ce dépôt : 
+
+```
+git clone https://github.com/AmauSup/history-sorter-firefox.git
+cd history-sorter-firefox
+```
 
