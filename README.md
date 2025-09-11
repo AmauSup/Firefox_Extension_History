@@ -17,7 +17,7 @@ It groups visited pages by domain, provides sorting and filtering tools, and dis
 
 🎨 Clean and responsive UI with hover effects and shadows
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 HTML5 → Popup structure
 
