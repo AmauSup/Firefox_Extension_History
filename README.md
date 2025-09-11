@@ -1,4 +1,4 @@
-## 📂 History Sorter – Firefox Extension
+# 📂 History Sorter – Firefox Extension
 
 History Sorter is a Firefox browser extension that helps you organize, search, and explore your browsing history more efficiently.
 It groups visited pages by domain, provides sorting and filtering tools, and displays everything in a modern, collapsible UI.
@@ -27,7 +27,7 @@ JavaScript (ES6) → DOM manipulation and rendering logic
 
 Firefox WebExtensions API → browser.history for data access
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 ## ✅ Prerequisites
 
 Firefox Browser (latest version)
@@ -96,7 +96,7 @@ history-sorter-firefox/
 
     🔄 Migration to Manifest V3 (when fully supported in Firefox)
 
-## ✅ Conclusion
+# ✅ Conclusion
 
 History Sorter is a lightweight yet powerful Firefox extension for managing browsing history.
 
