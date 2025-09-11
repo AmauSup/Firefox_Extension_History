@@ -34,47 +34,47 @@ Firefox Browser (latest version)
 
 Basic familiarity with WebExtensions
 
-📥 Installation (Temporary Add-on in Firefox)
-
+## 📥 Installation (Temporary Add-on in Firefox)
+```
 git clone https://github.com/yourusername/history-sorter-firefox.git
 cd history-sorter-firefox
-
+```
 Open Firefox and go to:
-
+```
     about:debugging#/runtime/this-firefox
+```
+Click "Load Temporary Add-on…"
 
-    Click "Load Temporary Add-on…"
+Select the manifest.json file in this folder
 
-    Select the manifest.json file in this folder
-
-    The extension icon will appear in your Firefox toolbar 🎉
+The extension icon will appear in your Firefox toolbar 🎉
 
 ⚠️ Note: This is a temporary add-on → it will be removed when Firefox restarts. You’ll need to reload it each session.
 ## ▶️ Usage
 
-    Click the History Sorter icon in the toolbar
+Click the History Sorter icon in the toolbar
 
-    Choose sorting preferences:
+Choose sorting preferences:
 
         🔢 By number of visits
 
         🏷️ By site name
 
-    Adjust order:
+Adjust order:
 
         ⬆️ Ascending
 
         ⬇️ Descending
 
-    Filter results:
+Filter results:
 
         By domain
 
         By URL/title
 
-    Click a domain → expand its visited pages
+Click a domain → expand its visited pages
 
-    Click any link → open it in a new tab
+Click any link → open it in a new tab
 
 ## 📂 Project Structure
 ```
